@@ -5,6 +5,7 @@ import Header from './_common/Header';
 
 import HomePage from './home/HomePage';
 import AboutPage from './about/AboutPage';
+import CoursesPage from './courses/CoursesPage';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='/courses' component={CoursesPage} />
           <Route path='/about' component={AboutPage} />
         </Switch>
       </div>
